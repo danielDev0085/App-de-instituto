@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="estyles.css">
+    <script src="scripts.js" defer></script>
+    <title>Gestión alumnos</title>
+</head>
+<body>
+    <header>
+        <h1>INSTITUTO DESCONOCIDO</h1>
+    </header>
+    <main>
+        <!--FORM SECTION-->
+        <div class="container">
+            <!--ADD STUDENT-->
+            <div class="row">
+                <div class="col-12 form-container d-flex justify-content-center align-items-center">
+                    <fieldset>
+                        <legend>GESTIÓN DE ESTUDIANTES</legend>
+                            <section id="inputs-container">
+                                <label for="name">Nombre:
+                                    <input type="text" name="name" id="name" placeholder="Introduce el nombre">
+                                </label>
+                                <label for="age">Edad:
+                                    <input type="number" name="age" id="age" min="16" max="99">
+                                </label>
+                                <label for="course">Curso:
+                                    <input type="text" name="course" id="course" placeholder="Introduce el curso">
+                                </label>
+                            </section>
+                            <section class="d-flex justify-content-center mt-4" id="container-buttons">
+                                <button class="bg-danger" onclick="removeFirstStudent();">Eliminar primer estudiante</button>
+                                <button class="bg-success" onclick="addStudent();">Añadir estudiante</button>
+                                <button class="bg-danger" onclick="removeStudentForm();">Eliminar estudiante por formulario</button>
+                            </section>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+
+        <!--MESSAGE-->
+        <div id="message">
+            <p></p>
+        </div> 
+
+        <!--LIST SECTION-->
+        <div class="container">
+            <div class="row list-container d-flex justify-content-center text-center align-items-center">
+                <div class="col-2">
+                    <button id="previous" href="#" onclick="previousNav();">Anterior</button>
+                </div>
+                <div class="col-4">
+                    <ol id="list">
+                        
+                    </ol>
+                </div>
+                <div class="col-2">
+                    <button id="next" href="#" onclick="nextNav();">Siguiente</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

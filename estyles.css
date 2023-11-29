@@ -1,0 +1,81 @@
+/*----HEADER----*/
+header h1{
+    color: rgb(3, 62, 3);
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+    font-family: 'open-sans', sans-serif;
+    margin-top: 30px;
+}
+
+/*----BODY----*/
+body{
+    background-color:  blanchedalmond;
+}
+
+/*----FORM AND LIST CONTAINER----*/
+main .form-container,
+main .list-container{
+    background-color: rgb(220, 216, 100);
+    color: rgb(3, 62, 3);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'open-sans', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid 4px rgb(3, 62, 3);
+    padding: 30px 0px;
+}
+
+/*----INPUTS CONTAINER----*/
+main .form-container input{
+    margin-right: 30px;
+    border-radius: 4px;
+}
+
+/*----INPUTS AND BUTTONS----*/
+main .form-container input,
+main .form-container button{
+    box-shadow: 0px 1px 1px 1px grey;
+    border: none;
+}
+
+/*----BUTTONS FORM----*/
+main .form-container button{
+    font-weight: 600;
+    margin: 0px 30px;
+    transition: 0.3 ease;
+    border-radius: 4px;
+}
+
+/*----BUTTONS LIST----*/
+main .list-container button{
+    background-color: rgb(3, 62, 3);
+    color: bisque;
+    transition: 0.3 ease;
+    border-radius: 4px;
+}
+
+main .list-container hr{
+    height: 1px;
+    background-color: rgb(3, 62, 3);
+}
+
+/*----P.MESSAGES----*/
+main #message{
+    text-align: center;
+    display: block;
+    color: rgb(3, 62, 3);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'open-sans', sans-serif;
+}
+
+/*----BUTTONS:HOVER----*/
+main .form-container button:hover,
+main .list-container button:hover{
+    opacity: 0.7;
+}
+
+
+
